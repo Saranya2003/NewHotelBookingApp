@@ -1,0 +1,84 @@
+import 'package:diving_trip_agency/screens/main/mainScreen.dart';
+import 'package:flutter/material.dart';
+
+class ListViewTripDetail extends StatefulWidget {
+  @override
+  _ListViewTripDetailState createState() => _ListViewTripDetailState();
+}
+
+class _ListViewTripDetailState extends State<ListViewTripDetail> {
+  var nameList = ['Phuket12', 'Samui22', 'Krabi33'];
+  var descList = ["Phuket province is located in southern Thailand. It is the biggest Island of Thailand and sits on the Andaman sea. The nearest province to the north is Phang-nga and the nearest provinces to the east are Phang-nga and Krabi.\nPhuket has a large Chinese influence, so you will see many Chinese shrines and Chinese Restaurants around the city. A Chinese Vegetarian Festival is held there every year. While the Chinese community is quite big, there are many other ethnicities bringing all their traditions and festivals from all over the world to Phuket.\nBeing a big island, Phuket is surrounded by many magnificent Beaches such as Rawai, Patong, Karon, Kamala, Kata Yai, Kata Noi, and Mai Khao. Laem Phromthep viewpoint is said to feature the most beautiful sunsets in Thailand.\nIt isn’t all just beaches though, there is also fantastic classical architecture such as the Goom Restaurant. That and the very welcome atmosphere and the famous Phuket NIGHTLIFE, you can see why the island is a hotspot for tourists in Thailand.\nVisiting Phuket is easy as there are many travel options."
+    , "Ko Samui (or Koh Samui, also often locally shortened to Samui; Thai: เกาะสมุย, pronounced [kɔ̀ʔ sā.mǔj]) is an island off the east coast of Thailand. Geographically in the Chumphon Archipelago, it is part of Surat Thani Province, though as of 2012, Ko Samui was granted municipal status and thus is now locally self-governing. Ko Samui, with an area of 228.7 square kilometres (88.3 sq mi), is Thailand's second largest island after Phuket.[2] In 2018, it was visited by 2.7 million tourists.[3]", 'description'];
+  var imgList = [
+    'assets/images/S__77242370.jpg',
+    'assets/images/S__83271684.jpg',
+    'assets/images/S__83271687.jpg'
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width * 0.9;
+    return Container(
+      color: Colors.amberAccent,
+      width: MediaQuery.of(context).size.width * 0.9,
+      child: ListView.builder(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          itemCount: imgList.length,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              //onTap: () {},
+              child: Card(
+                child: Row(
+                    children: [
+                      Container(
+                        color: Colors.amberAccent,
+                        //Width: 300,
+                        //Height: 300,
+                        width:MediaQuery.of(context).size.width*0.25,
+                        child: Image.asset(imgList[index]),
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.all(30),
+                          child: Column(
+
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(nameList[index],
+                                  style: TextStyle(
+                                      fontSize: 25, fontWeight: FontWeight.bold)),
+
+                                Container(
+                                width:MediaQuery.of(context).size.width*0.45,
+
+                                color: Colors.pink,
+                                child:
+                                Text(
+                                  descList[index],
+                                  style: TextStyle(fontSize: 15),
+                                  textAlign: TextAlign.justify,
+
+                                //overflow:TextOverflow.ellipsis,
+                                ),
+                              ),
+                            ],
+                          )),
+                  // SizedBox(
+                  //   height: 10,
+                  // ),
+                  // Container(
+                  //   width: width,
+                  //   child: Text(
+                  //     descList[index],
+                  //     style: TextStyle(fontSize: 15),
+                  //   ),
+                  // )
+                ]),
+              ),
+            );
+          }),
+    );
+  }
+}
