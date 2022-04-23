@@ -30,7 +30,7 @@ class SignUpDiverScreen extends StatelessWidget {
                 children: [
                   SizedBox(height: 50),
                   Text(
-                    "Register account (Diver) ",
+                    "Register account (Hotel) ",
                     style: TextStyle(fontSize: 20),
                   ),
                   Text(

@@ -323,7 +323,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             color: Colors.white,
             child: Text(
-              'Diver',
+              'Hotel',
               style: TextStyle(
                 color: Color(0xFF527DAA),
                 letterSpacing: 1.5,
@@ -339,6 +339,7 @@ class _LoginScreenState extends State<LoginScreen> {
               'assets/images/google.jpg',
             ),
           ),*/
+          /*
           RaisedButton(
             elevation: 5.0,
             onPressed: () {
@@ -364,7 +365,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // fontFamily: 'OpenSans',
               ),
             ),
-          ),
+          ),*/
         ],
       ),
     );
