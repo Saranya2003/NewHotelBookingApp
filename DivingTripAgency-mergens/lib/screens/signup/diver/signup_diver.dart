@@ -18,19 +18,19 @@ class SignUpDiverScreen extends StatelessWidget {
                     colors: [
                   // Color(0xfffa2e1db),
                   //  Color(0xfffabdee6)
-                  Color(0xfff78c5dc),
-                  Color(0xfff97dee7),
-                  Color(0xfffb7ecea),
-                  Color(0xfffd8f4ef),
+                  Color(0xff4e342e),
+                  Color(0xff6d4c41),
+                  Color(0xff8d6e63),
+                  Color(0xffbcaaa4),
                   //   Color(0xffff0fdfa),
-                  Color(0xfffc5f7eb),
+                  Color(0xffefebe9),
                 ])),
             child: SingleChildScrollView(
               child: Column(
                 children: [
                   SizedBox(height: 50),
                   Text(
-                    "Register account (Hotel) ",
+                    "Register account (Customer) ",
                     style: TextStyle(fontSize: 20),
                   ),
                   Text(

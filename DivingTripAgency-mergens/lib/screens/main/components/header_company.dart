@@ -43,8 +43,8 @@ class HeaderCompany extends StatelessWidget {
                 colors: [
               // Color(0xfffaea4e3),
               // Color(0xfffd3ffe8),
-              Color(0xfffcfecd0),
-              Color(0xfffffc5ca),
+              Color(0xffA1887F),
+              Color(0xffD7CCC8),
             ])),
         child: Row(
           children: <Widget>[

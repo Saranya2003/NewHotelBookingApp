@@ -36,15 +36,15 @@ class Header extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-            Color(0xfffb9deed),
-            Color(0xfffefefef),
+                Color(0xffA1887F),
+                Color(0xffD7CCC8),
           ])),
       child: Row(
         children: [
           SizedBox(
             width: 10,
           ),
-          Text('DivingTripAgency'),
+          Text('Hotel'),
           Spacer(),
           if (!isMobile(context))
             Row(
@@ -75,7 +75,7 @@ class Header extends StatelessWidget {
                             builder: (context) => ReviewScreen()));
                   },
                 ),
-                NavItem(
+                /*NavItem(
 
                   title: 'Weather Forecast',
                   tapEvent: () {
@@ -84,7 +84,7 @@ class Header extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => WForecastScreen()));
                   },
-                ),
+                ),*/
                 NavItem(
                   title: 'Profile',
                   tapEvent: () {

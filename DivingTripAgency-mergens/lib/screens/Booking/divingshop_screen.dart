@@ -27,7 +27,7 @@ class DivingshopScreen extends StatelessWidget {
             SizedBox(height: 50),
                 SectionTitle(
                   title: "Packages",
-                  color: Color(0xFFFF78a2cc),
+                  color: Color(0xFF6D4C41),
                 ),
                  SizedBox(
                 height: 30,

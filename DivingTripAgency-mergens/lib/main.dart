@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       title: 'Hotel Booking',
       theme: ThemeData(
           elevatedButtonTheme: ElevatedButtonThemeData(
-            style: TextButton.styleFrom(backgroundColor: Color(0xFFF52B2Bf)),
+            style: TextButton.styleFrom(backgroundColor: Color(0xFFBCAAA4)),
           ),
           fontFamily: 'Poppins'),
   //home: MainCompanyScreen(),

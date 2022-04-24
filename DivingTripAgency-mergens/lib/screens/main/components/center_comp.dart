@@ -45,8 +45,8 @@ class _CenterCompanySectionState extends State<CenterCompanySection> {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-              Color(0xfffcfecd0),
-              Color(0xfffffc5ca),
+              Color(0xff3E2723),
+              Color(0xffA1887F),
             ])),
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,

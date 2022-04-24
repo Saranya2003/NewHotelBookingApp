@@ -239,7 +239,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Text(
           'LOGIN',
           style: TextStyle(
-            color: Color(0xFF527DAA),
+            color: Color(0xFFA18874),
             letterSpacing: 1.5,
             fontSize: 18.0,
             fontWeight: FontWeight.bold,
@@ -323,9 +323,9 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             color: Colors.white,
             child: Text(
-              'Hotel',
+              'Customer',
               style: TextStyle(
-                color: Color(0xFF527DAA),
+                color: Color(0xFFA18874),
                 letterSpacing: 1.5,
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
@@ -419,10 +419,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         end: Alignment.topRight,
                         colors: [
                       // Color(0xfff7AD7F0),
-                      Color(0xfff92DFF3),
-                      Color(0xfffB7E9F7),
-                      Color(0xfffDBF3FA),
-                      Color(0xfffF5FCFF),
+                      Color(0xff3E2723),
+                      Color(0xff4E342E),
+                      Color(0xff6D4C41),
+                      Color(0xffD7CCC8),
                     ])
                     // decoration: BoxDecoration(
                     //     image: DecorationImage(
@@ -451,7 +451,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 //height: 600,
                 //width: 661,
 
-                decoration: BoxDecoration(color: Color(0xfff7AD7F0)
+                decoration: BoxDecoration(color: Color(0xffD7CCC8)
                     // Colors.greenAccent.withOpacity(0.5)
                     ),
                 child: SingleChildScrollView(
@@ -469,7 +469,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Text(
                         'Sign In',
                         style: TextStyle(
-                          color: Color(0xFF527DAA),
+                          color: Color(0xFF795548),
                           // color: Colors.white,
                           //fontFamily: 'OpenSans',
                           fontSize: 30.0,

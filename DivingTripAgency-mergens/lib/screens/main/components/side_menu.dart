@@ -36,7 +36,7 @@ class SideMenu extends StatelessWidget {
     return Container(
       height: double.infinity,
       // color: Colors.white,
-       color: Color(0xfffb9deed),
+       color: Color(0xffA1887F),
       child: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(20),
@@ -108,7 +108,7 @@ class SideMenu extends StatelessWidget {
                   print("about to checkLogin\n--------------");
 
                   //return (checkLogin()&&user_profile.hasDiver())
-                  return checkLogin() == true ?
+                  return
                   ElevatedButton(
 
 
@@ -122,8 +122,8 @@ class SideMenu extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               horizontal: 20 * 1.5, vertical: 20)),
                       child: Text("Sign out")
-                  )
-                      :
+                  );
+                      /*:
                   ElevatedButton(
 
 
@@ -137,54 +137,10 @@ class SideMenu extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               horizontal: 20 * 1.5, vertical: 20)),
                       child: Text("Sign in")
-                  );
+                  );*/
                 }
               }
               ),
-              /*Container(
-                height: 45,
-                child: ElevatedButton(
-
-
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => LoginScreen()));
-                    },
-                    style: TextButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 20 * 1.5, vertical: 20)),
-
-                    child: FutureBuilder(
-                      future: getProfile(),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          print("about to checkLogin\n--------------");
-
-                          //return (checkLogin()&&user_profile.hasDiver())
-                          return checkLogin() == true ?
-
-                               Text(
-                                  "Log out",
-                                  style: TextStyle(color: Colors.black),
-                                )
-                              : Text(
-                                  "Log in",
-                                  style: TextStyle(color: Colors.black),
-                                );
-                        } else {
-                          return Align(
-                              alignment: Alignment.center,
-                              child: Text(
-                                'Log in',
-                                style: TextStyle(color: Colors.black),
-                              ));
-                        }
-                      },
-                    ),
-                  ),
-                ),*/
                 SizedBox(
                   height: 20,
                 ),

@@ -71,7 +71,7 @@ class DrawerItem extends StatelessWidget {
     return ListTile(
       contentPadding: EdgeInsets.symmetric(horizontal: 20),
       selected: isActive,
-      selectedTileColor: Color(0xfffB4CFEC),
+      selectedTileColor: Color(0xffD7CCC8),
       onTap: press,
       title: Text(
         title,
